@@ -1,0 +1,18 @@
+export const REGISTER = 'REGISTER'
+export const LOGIN = 'LOGIN'
+
+export const GET_LIST_USERS = 'GET_LIST_USERS'
+export const GET_USER_ID = 'GET_USER_ID' 
+export const GET_USER_ACCOUNT = 'GET_USER_ACCOUNT'
+export const GET_USER_IDENTITY = 'GET_USER_IDENTITY' 
+export const DELETE_USER = 'DELETE_USER' 
+export const UPDATE_USER = 'UPDATE_USER'
+
+export const GET_LIST_CONTACTS = 'GET_LIST_CONTACTS'
+export const GET_CONTACT_ID = 'GET_CONTACT_ID' 
+export const DELETE_CONTACT = 'DELETE_CONTACT' 
+export const UPDATE_CONTACT = 'UPDATE_CONTACT'
+
+
+
+
