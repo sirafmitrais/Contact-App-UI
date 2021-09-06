@@ -12,17 +12,19 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action: AuthAction) => {
-    switch(action.type){
-        case LOGIN:
-            return {
-                ...state,
-                ...{token_jwt: action.payload}
-            }
-        case REGISTER:
-            return {
-                ...state,
-                ...{token_jwt: action.payload}
-            }
+    switch (action.type) {
+      case LOGIN:
+        return {
+          ...state,
+          ...{ token_jwt: action.payload },
+        };
+      case REGISTER:
+        return {
+          ...state,
+          ...{ token_jwt: action.payload },
+        };
+      default:
+        return state;
     }
 }
 
