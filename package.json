@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -10,6 +11,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/classnames": "^2.3.1",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
@@ -22,6 +24,8 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "bulma": "^0.9.3",
+    "classnames": "^2.3.1",
+    "daisyui": "^1.14.0",
     "jwt-decode": "^3.1.2",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -39,11 +43,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "tailwind:css": "tailwind build src/styles/tailwind.css -c tailwind.config.js -o src/index.css"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "tailwind:css": "tailwind build src/styles/tailwind.css -c tailwind.config.js -o src/styles/index.css"
   },
   "eslintConfig": {
     "extends": [
@@ -64,7 +68,10 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.10",
     "@types/styled-components": "^5.1.14",
-    "tailwindcss": "^2.2.9"
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

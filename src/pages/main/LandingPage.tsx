@@ -11,6 +11,7 @@ function LandingPage () {
               <a href="/register">Register</a>
             </li>
           </ul>
+          <button className="btn btn-primary">DaisyUI Button</button>
         </h1>
       </div>
     );
